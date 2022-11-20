@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c42915ff-0ff1-4111-9bf3-5da48cb0c502" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Elagazasok_5_Feladat/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Elagazasok_5_Feladat/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fuggvenyek_1_Feladat/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Fuggvenyek_1_Feladat/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../I.2. Tort/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../I.2. Tort/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../I.2. Tort/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../I.2. Tort/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../I.2. Tort/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../I.2. Tort/I.2. Tort.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../I.2. Tort/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Karakterlancok_1_Feladat/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Karakterlancok_1_Feladat/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Karakterlancok_5_Feladat/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Karakterlancok_5_Feladat/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Program.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GGModJyAOH6qUB2LtV3LIp1jRi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c42915ff-0ff1-4111-9bf3-5da48cb0c502" name="Changes" comment="" />
+      <created>1666010646228</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666010646228</updated>
+      <workItem from="1666010648407" duration="87000" />
+      <workItem from="1666010770662" duration="32000" />
+      <workItem from="1666010839070" duration="52000" />
+      <workItem from="1666010911191" duration="18000" />
+      <workItem from="1666010942711" duration="12000" />
+      <workItem from="1666013847715" duration="501000" />
+      <workItem from="1666024738220" duration="74000" />
+      <workItem from="1666026007010" duration="693000" />
+      <workItem from="1666030600014" duration="86000" />
+      <workItem from="1667633415635" duration="661000" />
+      <workItem from="1667638036100" duration="71000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
