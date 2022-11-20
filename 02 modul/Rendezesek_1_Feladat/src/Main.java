@@ -1,9 +1,12 @@
 import java.io.File;
 import java.io.FileWriter;
+import java.io.FileReader;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -16,22 +19,49 @@ public class Main {
         //c. Rendezze a tömböt beszúrásos rendezéssel.
         //A rendezést a karakterláncok első betűje alapján végezze el.
         System.out.println(" Ez a program egy fajlbol beolvas egy karakterlancot !");
+        // folder letrehozasa
         Path mappa_eleresi_utvonala = Paths.get("", "_DataFiles").toAbsolutePath();
         String uj_mappa_eleresi_utvonala = mappa_eleresi_utvonala + "/";
         File mappa = mappa_eleresi_utvonala.toFile();
-        mappa.mkdirs();
+        String fajlok = "";
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" Kerem adja meg az elkeszitendo fajl nevet : ");
+        fajlok = sc.nextLine();
         Path newDirectory = Files.createDirectories(Path.of(uj_mappa_eleresi_utvonala));
         System.out.println("uj mappa = " + newDirectory);
-        String bemenet = "";
-        Scanner sc = new Scanner(System.in);
-        bemenet = sc.nextLine();
-        Path newFile = Files.createFile(newDirectory.resolve(bemenet + ".txt"));
+
+        Path newFile = Files.createDirectories(newDirectory.resolve(newDirectory+"/"+fajlok+"/"));
         System.out.println("newFile = " + newFile);
-        FileWriter fw = new FileWriter(String.valueOf(newFile.toAbsolutePath()));
+        Path ujFajlUtja = Paths.get("_DataFiles",fajlok,fajlok+".txt");
+        File ujFajl = ujFajlUtja.toFile();
+        FileWriter fw = new FileWriter(ujFajl);
         fw.write("6");
         fw.write("\n");
-        fw.write("alma");
+        fw.write("Alma");
+        fw.write("\n");
+        fw.write("Korte");
+        fw.write("\n");
+        fw.write("Szilva");
+        fw.write("\n");
+        fw.write("Eper");
+        fw.write("\n");
+        fw.write("Narancs");
+        fw.write("\n");
+        fw.write("Szolo");
+
 
         fw.close();
+
+
+        FileReader fr = new FileReader(ujFajl);
+        Scanner scFileOlvaso = new Scanner(fr);
+        String elsoSor = scFileOlvaso.nextLine();
+        System.out.println(elsoSor);
+        String [] tomb = new String[Integer.parseInt(elsoSor)];
+        for (int i=0;i<Integer.parseInt(elsoSor);i++){
+            tomb[i]=scFileOlvaso.nextLine();
+            System.out.println(tomb[i]);
+        }
+        fr.close();
     }
 }
