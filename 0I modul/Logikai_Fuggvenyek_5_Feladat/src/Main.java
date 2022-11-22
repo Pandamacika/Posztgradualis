@@ -28,11 +28,16 @@ public class Main {
         eredmeny(a, b, c);
         System.out.println();
         eredmeny_maskepp_2(a, b, c);
+        boolean [] uj_eredmeny = new boolean[db];
+
+
+
     }
 
     private static void eredmeny_maskepp_2(boolean[] a, boolean[] b, boolean[] c) {
         boolean[] eredmeny_maskepp = new boolean[db];
         for (int i = 0; i < db; i++) {
+
             eredmeny_maskepp[i] = ((c[i])||(!a[i]&&b[i])||(!a[i]&&!b[i]&&!c[i]));
             System.out.print(eredmeny_maskepp[i] + ",");
         }
