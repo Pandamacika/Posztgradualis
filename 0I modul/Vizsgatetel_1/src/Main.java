@@ -43,7 +43,7 @@ public class Main {
             case 3 -> {
                 System.out.println(" On az osszeadast valasztotta");
                 Globalis_valtozo = Globalis_valtozo + szam;
-                System.out.println(" A szorzas eredmenye : " + Globalis_valtozo);
+                System.out.println(" A osszeadas eredmenye : " + Globalis_valtozo);
             }
         }
     }
