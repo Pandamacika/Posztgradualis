@@ -38,7 +38,7 @@ public class Main {
 
 
         } else {
-            System.out.println(" A " + szam + " paratlan szam nem oszthato sem 4-el sem 8-al");
+            System.out.println(" A " + szam + " paratlan szam nem oszthato sem 4-el sem 8-al ");
         }
     }
 }
