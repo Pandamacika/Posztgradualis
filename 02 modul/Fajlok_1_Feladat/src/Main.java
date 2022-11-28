@@ -11,14 +11,15 @@ public class Main {
         Path mappa_eleresi_utvonala = Paths.get("").toAbsolutePath();
         File mappa = mappa_eleresi_utvonala.toFile();
         File[] mappa_tartalma = mappa.listFiles();
-        for (int i = 0; i < mappa_tartalma.length; i++) {
-            if (mappa_tartalma[i].isDirectory()) {
-                System.out.println(" mappa : " + mappa_tartalma[i]);
+
+        for (File file : mappa_tartalma) {
+            if (file.isDirectory()) {
+                System.out.println(" mappa : " + file);
             }
         }
-        for (int i = 0; i < mappa_tartalma.length; i++) {
-            if (mappa_tartalma[i].isFile()) {
-                System.out.println(" fajl: " + mappa_tartalma[i]);
+        for (File file : mappa_tartalma) {
+            if (file.isFile()) {
+                System.out.println(" fajl: " + file);
 
             }
         }
