@@ -22,7 +22,7 @@ public class Main {
         int palindrom_vagy_sem=0;
         for (int i = 0; i < hossz; i++) {
             if (uj_szoveg.charAt(0) != uj_szoveg.charAt(hossz - 1)) {
-                System.out.println( uj_szoveg.charAt(hossz - i - 1));
+                System.out.print( uj_szoveg.charAt(hossz - i - 1));
                 palindrom_vagy_sem++;
             } else {
                 System.out.print(uj_szoveg.charAt(hossz - i - 1));
