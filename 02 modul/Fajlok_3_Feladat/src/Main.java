@@ -23,12 +23,12 @@ public class Main {
         String letrehozandoFileNeve = "";
         Path newDirectory = Files.createDirectories(mappa_eleresi_utvonala);
         System.out.println("uj mappa = " + newDirectory);
-
+        System.out.println(" Kerem adja meg a fajl neveket : ");
 
         while (!letrehozandoFileNeve.equals(kilepes)) {
             letrehozandoFileNeve = sc.nextLine();
             if (!Objects.equals(letrehozandoFileNeve, kilepes)) {
-                Path letrehozandoFileUtja = Paths.get(mappa_eleresi_utvonala.toString(), letrehozandoFileNeve);
+                Path letrehozandoFileUtja = Paths.get(mappa_eleresi_utvonala.toString(), letrehozandoFileNeve + ".txt");
                 File newFile = letrehozandoFileUtja.toFile();
                 newFile.createNewFile();
                 System.out.println("newFile = " + newFile);
