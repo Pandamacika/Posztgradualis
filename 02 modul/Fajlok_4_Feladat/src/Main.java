@@ -34,7 +34,12 @@ public class Main {
                     // System.out.println("newFile = " + newFile);
                 } else {
                     System.out.println(" Ez a fajl mar letezik, kerem irjon be uj nevet :");
-                    fajlok = sc.nextLine();
+                    if (!Objects.equals(fajlok, kilepes)) {
+                        fajlok = sc.nextLine();
+                        Path newFile = Files.createFile(newDirectory.resolve(newDirectory + "/" + fajlok + ".txt"));
+                    }
+
+
                 }
             } else {
                 System.out.println("Vege");
