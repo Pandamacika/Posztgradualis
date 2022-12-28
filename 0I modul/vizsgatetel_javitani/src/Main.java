@@ -1,5 +1,3 @@
-
-//package com.company;
 public class Main {
 
     public static void main(String[] args) {
@@ -9,6 +7,7 @@ public class Main {
 
         // a tömb i-ik eleme azt mutatja meg, hogy s i-ik karaktere hányszor szerepel s-ben.
         int[] occurenceCount = calculateFrequencies(s);
+
 
         // azokat a karaktereket amiket már kiírtunk ebben a stringben gyűjtjük,
         // mert mindent csak egyszer kell kiírni
@@ -21,6 +20,7 @@ public class Main {
             // a tömb nemnegatív elemei azt mutatják, hogy c mely pozíciókon szerepel s-ben
             int[] positionsOfC = getPositionsOfC(s, c);
 
+
             // igaz, ha c minden előfordulásánál a követő karakter kevesebbszer fordul elő mint c
             boolean moreThanEveryFollower = occursMoreThanEveryFollower(occurenceCount, i, positionsOfC);
 
@@ -31,11 +31,48 @@ public class Main {
     }
 
     private static int[] calculateFrequencies(String s) {
+
+        int hossz = s.length();
+        int[] db = new int[hossz];
+
+        char karakter;
+        char []tomb = new char[hossz];
+        for (int i = 0; i < hossz; i++) {
+            karakter = s.charAt(i);
+            tomb[i] = karakter;
+        }
+        
+        for (int i = 0; i < hossz; i++) {
+            System.out.print(tomb[i] + ",");
+        }
+        System.out.println();
+        for (int i = 0; i < hossz; i++) {
+            db[i] = 1;
+            for (int j = i + 1; j < hossz; j++) {
+
+                if (tomb[i] == tomb[j]) {
+
+                    db[i]++;
+                    tomb[j]=' ';
+                }
+            }
+
+
+        }
+        for (int i = 0; i < hossz; i++) {
+            if (tomb[i] != ' ' && tomb[i] != ' ')
+
+                System.out.print(tomb[i] + "-" + db[i]+",");
+
+        }
+
+        return db;
     }
 
     /**
      * Ellenörzi, hogy az a currentPositionOfC-ik karakter esetében igaz-e, hogy minden előfordulása esetén az őt
      * követő karakter kevesebbszer fordul elő.
+     *
      * @param occurenceCount
      * @param currentPositionOfC
      * @param positionsOfC
@@ -55,21 +92,22 @@ public class Main {
 
     /**
      * Megkeresi, hogy c mely pozíciókon fordul elő s-ben.
+     *
      * @param s
      * @param c
      * @return A visszaadott tömb első elemei c pozícióit tartalmazzák. A maradék helyek érvénytelensége jelölve van.
      */
     private static int[] getPositionsOfC(String s, char c) {
-        int[] positions  = new int[s.length()];
-        int nextValidPositionIdx =0;
+        int[] positions = new int[s.length()];
+        int nextValidPositionIdx = 0;
         int nextPosition = s.indexOf(c);
-        while (nextPosition >=0){
+        while (nextPosition >= 0) {
             positions[nextValidPositionIdx] = nextPosition;
             ++nextValidPositionIdx;
-            nextPosition = s.indexOf(c, nextPosition+1);
+            nextPosition = s.indexOf(c, nextPosition + 1);
         }
 
-        return  positions;
+        return positions;
     }
 
     /**
@@ -77,7 +115,7 @@ public class Main {
      * @param s
      * @return A visszaadott tömb i-ik helyén levő szám megmutatja, hogy s i-ik karaktere hányszor szerepel s-ben.
      */
-    private static int[] countOccurences(String s) {
-        return new int[0];
-    }
+    // private static int[] countOccurences(String s) {
+    //   return new int[0];
+    //}
 }
