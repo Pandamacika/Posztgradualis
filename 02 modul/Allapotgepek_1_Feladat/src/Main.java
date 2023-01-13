@@ -56,7 +56,7 @@ public class Main {
         f.add(button1);
         f.add(button3);
         f.add(button2);
-        button2.setBackground(Color.blue);
+        button2.setBackground(Color.CYAN);
         button1.setBackground(Color.CYAN);
         button3.setBackground(Color.CYAN);
         f.setSize(450, 450);
